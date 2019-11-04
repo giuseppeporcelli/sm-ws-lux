@@ -3,7 +3,6 @@ from __future__ import print_function
 import argparse
 import os
 import pandas as pd
-import pprint
 
 from sklearn import tree
 from sklearn.externals import joblib
@@ -36,15 +35,6 @@ if __name__ == '__main__':
     parser.add_argument('--val', type=str, default=os.environ['SM_CHANNEL_VAL'])
 
     args = parser.parse_args()
-    
-    d = {}
-
-    for l in open('/proc/mounts'):
-        if l[0] == '/':
-            l = l.split()
-            d[l[0]] = l[1]
-
-    pprint.pprint(d)
 
     # Load training data.
     train_data = pd.read_csv(args.train + '/windturbine_data_train.csv', header=None, engine="python") 
