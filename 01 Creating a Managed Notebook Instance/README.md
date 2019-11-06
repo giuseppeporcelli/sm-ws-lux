@@ -9,7 +9,7 @@ In this lab, we will walk you through creating a S3 bucket for storing data and 
 ## Create an Amazon S3 bucket
 In this section, we will create an Amazon S3 bucket to be used as the storage service for this workshop. Amazon SageMaker uses **Amazon S3** as the main storage for both data and model artifacts; you can actually use other sources when loading data into the Jupyter notebook instances, but this is outside of the scope of this workshop and not a recommended approach for large-scale Machine Learning.
 
-1. Sign into the **AWS Management Console** using the provided URL and credentials (username and password)
+1. Sign into the **AWS Management Console** using the provided URL and credentials
 2. In the upper-right corner of the AWS Management Console, confirm you are in the desired AWS region. For this workshop we will use the **EU West (Ireland)** [eu-west-1]
 3. Open the **Amazon S3** console at <a href="https://console.aws.amazon.com/s3">https://console.aws.amazon.com/s3</a> or choose the Amazon S3 service in the menu.
 4.	In the Amazon S3 console, click the **Create Bucket** button.
